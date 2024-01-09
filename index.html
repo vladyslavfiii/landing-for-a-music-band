@@ -1,0 +1,297 @@
+<!DOCYPE HTML5>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>landing-for-a-music-band</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<link rel="icon" type="image/x-icon" href="src/styles/favicon.ico">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/09cea8ea86.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+	<link rel="stylesheet" href="src/styles/style.css">
+
+</head>
+
+<body>
+<!-- ============================== -->
+<!-- NAVIGATION SECTION-->
+	<div class="nav">
+		<div class="container">
+			<nav class="navbar navbar-expand-lg bg-none">
+				<div class="container-fluid">
+
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<div class="navbar-nav d-flex d-flex justify-content-center">
+						<a class="nav-link" href="#artistJackWhite">Jack White</a>
+						<a class="nav-link" href="#artistTheWhiteStripes">The White Stripes</a>
+						<a class="nav-link" href="#artistTheRaconteurs">The Raconteurs</a>
+						<a class="nav-link" href="#artistTheDeadWeather">The Dead Weather</a>
+					</div>
+				</div>
+				</div>
+			</nav>
+		</div>
+	</div>
+<!-- ============================== -->
+<!-- HEADER SECTION-->
+	<header class="header">
+		<div class="container">
+		<div id="header-carousel" class="carousel slide">
+			<div class="carousel-indicators">
+			  <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+			  <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+			  <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			</div>
+
+			<div class="carousel-inner">
+
+			  <div class="carousel-item active">
+				<div class="carousel-item-direction d-flex justify-content-center align-items-center" >
+					<div class="background-gif slide-1 d-flex">
+						<div class="album-cover d-flex flex-column justify-content-center align-items-center">
+							<img class="cover" id="fearOfTheDawnJackWhiteAlbumCover">
+						</div>
+						<div class="album-description">
+							<div class="desctiption desctiption-jack-white">
+								<p><span>Artist:</span> Jack White</p>
+								<p><span>Release date:</span> April 8, 2022</p>
+								<p><span>Label:</span> Third Man Records</p>
+								<p>Listen:</p>
+
+								<div class="header-links d-flex flex-row" id="fearOfTheDawnJackWhiteLinkSection"> 
+									<p class="col-3 social-link" onclick="goToListen(this)" id="youtubeMusic"><i class="fa-brands fa-youtube"></i></p>
+									<p class="col-3 social-link" onclick="goToListen(this)" id="appleMusic"><i class="fa-brands bi bi-music-note-beamed"></i></p>
+									<p class="col-3 social-link" onclick="goToListen(this)" id="spotify"><i class="fa-brands fa-spotify"></i></p>
+									<div class=" col-3 playSong" id="fearOfTheDawnSong">
+										<div onclick="playAudio(this)" class="playSongControl" id="playSongButton"></div>
+										<audio id="fearOfTheDawnIntroductionSong">
+											<source src="./src/scripts/fearOfTheDawn.mp3" type="audio/mp3">
+										</audio>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			  </div>
+
+			  <div class="carousel-item ">
+				<div class="carousel-item-direction d-flex justify-content-center align-items-center" >
+					<div class="background-gif slide-2 d-flex ">
+						<div class="album-cover d-flex flex-column justify-content-center align-items-center">
+							<img class="cover" id="theWhiteStripesGreatestHitsAlbumCover">
+						</div>
+						<div class="album-description">
+							<div class="desctiption desctiption-white-stripes">
+								<p><span>Artist:</span> The White Stripes</p>
+								<p><span>Release date:</span> December 4, 2020</p>
+								<p><span>Label:</span> Third Man Records</p>
+								<p>Listen:</p>
+
+								<div class="header-links d-flex flex-row" id="theWhiteStripesGreatestHitsLinkSection"> 
+									<p class="col-3 social-link" onclick="goToListen(this)" id="youtubeMusic"><i class="fa-brands fa-youtube"></i></p>
+									<p class="col-3 social-link" onclick="goToListen(this)" id="appleMusic"><i class="fa-brands bi bi-music-note-beamed"></i></p>
+									<p class="col-3 social-link" onclick="goToListen(this)" id="spotify"><i class="fa-brands fa-spotify"></i></p>
+									<div class="col-3 playSong" id="sevenNationArmySong">
+										<div onclick="playAudio(this)" class="playSongControl" id="playSongButton"></div>
+										<audio id="sevenNationArmyIntroductionSong">
+											<source src="src/styles/cover/sevenNationArmy.mp3" type="audio/mp3">
+										</audio>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			  </div>
+
+			  <div class="carousel-item ">
+				<div class="carousel-item-direction d-flex justify-content-center align-items-center" >
+					<div class="background-gif slide-3 d-flex">
+						<div class="album-cover d-flex flex-column justify-content-center align-items-center">
+							<img class="cover" id="enteringHeavenAliveJackWhiteAlbumCover">
+						</div>
+						<div class="album-description">
+							<div class="desctiption desctiption-jack-white">
+								<p><span>Artist:</span> Jack White</p>
+								<p><span>Release date:</span> July 22, 2022</p>
+								<p><span>Label:</span> Third Man Records</p>
+								<p>Listen:</p>
+			
+								<div class="header-links d-flex flex-row" id="enteringHeavenAliveJackWhiteLinkSection"> 
+									<p class="col-3 social-link" onclick="goToListen(this)" id="youtubeMusic"><i class="fa-brands fa-youtube"></i></p>
+									<p class="col-3 social-link" onclick="goToListen(this)" id="appleMusic"><i class="fa-brands bi bi-music-note-beamed"></i></p>
+									<p class="col-3 social-link" onclick="goToListen(this)" id="spotify"><i class="fa-brands fa-spotify"></i></p>
+									<div class="col-3 playSong" id="ifIDieTomorrowSong"> 
+										<div onclick="playAudio(this)" class="playSongControl" id="playSongButton"></div>
+										<audio id="ifIDieTomorrowIntroductionSong">
+											<source src="src/styles/cover/ifIDieTomorrow.mp3" type="audio/mp3">
+										</audio>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			  </div>
+
+			<button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+			  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			  <span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+			  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			  <span class="visually-hidden">Next</span>
+			</button>
+		  </div>
+		</div>
+	</header>
+<!-- ============================== -->
+<!-- CONTENT SECTION-->
+<!-- ============================== -->
+<!-- JACK WHITE CONTENT SECTION -->
+	<div class="content">
+		<div class="artist-info" id="artistJackWhite"> 
+			<div class="container">
+				<div class="scroll-reveal artist-description" id="artistDescriptionJackWhite">
+					<h1>JACK WHITE</h1>
+					<p>
+						John Anthony White, is an American musician, singer, songwriter, and music producer,
+						best known as the lead singer and guitarist of the duo The White Stripes.
+					</p>
+					<span class="more-description-span">
+						White has enjoyed consistent critical and popular success and is
+						widely credited as one of the key artists in the garage rock revival of the 2000s. He has won 12 Grammy Awards,
+						and three of his solo albums have reached number one on the Billboard charts. Rolling Stone ranked him
+						number 70 on its 2010 list of "The 100 Greatest Guitarists of All Time". David Fricke's 2010 list ranked him at number 17.
+						In 2012, the New York Times called White "the coolest, weirdest and savviest rockstar of our time".
+					</span>
+					<button class="description-button" onclick="moreDescription(this)" id="moreDescriptionButton">More</button>
+					<div class="artist-social d-flex flex-row">
+						<div class="artist-social-link" onclick="goToSocial(this)" id="JackWhiteInstagramLink"><i class="fa-brands fa-instagram"></i></div>
+						<div class="artist-social-link" onclick="goToSocial(this)" id="JackWhiteFacebookLink"><i class="fa-brands fa-facebook"></i></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- ============================== -->
+<!-- THE WHITE STRIPES CONTENT SECTION -->
+	<div class="content">
+		<div class="artist-info" id="artistTheWhiteStripes"> 
+			<div class="container">
+				<div class="scroll-reveal artist-description" id="artistDescriptionTheWhiteStripes">
+					<h1>THE WHITE STRIPES</h1>
+					<p>
+						The White Stripes were an American rock duo from Detroit formed in 1997. The group consisted of Jack White 
+						(songwriter, vocals, guitar, piano, and bass) and Meg White (drums, percussion, and vocals). They were a leading
+						group of the 2000s indie rock and garage rock revival.
+					</p>
+					<span class="more-description-span">
+						Beginning in the late 1990s, the White Stripes sought success within 
+						the Detroit music scene, releasing six singles and two studio albums, their self-titled debut album (1999) 
+						and De Stijl (2000). They rose to prominence with their critically acclaimed albums White Blood Cells (2001) 
+						and Elephant (2003), which propelled them to the forefront of the garage rock revival. The single "Seven Nation Army",
+						which used a guitar and an octave pedal to create the opening riff, became one of their most recognizable songs.
+					</span>
+					<button class="description-button" onclick="moreDescription(this)" id="moreDescriptionButton">More</button>	
+					<div class="artist-social d-flex flex-row">
+						<div class="artist-social-link" onclick="goToSocial(this)" id="TheWhiteStripesInstagramLink"><i class="fa-brands fa-instagram"></i></div>
+						<div class="artist-social-link" onclick="goToSocial(this)" id="TheWhiteStripesFacebookLink"><i class="fa-brands fa-facebook"></i></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- ============================== -->
+<!-- THE RACONTEURS CONTENT SECTION -->
+	<div class="content">
+		<div class="artist-info" id="artistTheRaconteurs"> 
+			<div class="container">
+				<div class="scroll-reveal artist-description" id="artistDescriptionTheRaconteurs">
+					<h1>THE RACONTEURS</h1>
+					<p>
+						&nbsp; The Raconteurs is an American rock band from Detroit,
+						Michigan, formed in 2005. The band consists of Jack White (vocals, guitar), Brendan Benson (vocals, guitar), 
+						Jack Lawrence (bass guitar), and Patrick Keeler (drums). Lawrence and Keeler were originally members of the 
+						Greenhornes, while White and Lawrence went on to become members of the Dead Weather.
+					</p>
+					<span class="more-description-span">
+						The band is based in Nashville, Tennessee. According to the band's
+						official website, "The seed was sown in an attic in the middle of a hot summer when friends Jack White 
+						and Brendan Benson got together and wrote a song that truly inspired them.
+					</span>
+					<button class="description-button" onclick="moreDescription(this)" id="moreDescriptionButton">More</button>	
+					<div class="artist-social d-flex flex-row">
+						<div class="artist-social-link" onclick="goToSocial(this)" id="TheRaconteursInstagramLink"><i class="fa-brands fa-instagram"></i></div>
+						<div class="artist-social-link" onclick="goToSocial(this)" id="TheRaconteursFacebookLink"><i class="fa-brands fa-facebook"></i></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- ============================== -->
+<!-- THE DEAD WEATHER CONTENT SECTION -->
+	<div class="content">
+		<div class="artist-info" id="artistTheDeadWeather"> 
+			<div class="container">
+				<div class="scroll-reveal artist-description" id="artistDescriptionTheDeadWeather">
+					<h1>THE DEAD WEATHER</h1>
+					<p>
+						The Raconteurs is an American rock band from Detroit,
+						Michigan, formed in 2005. The band consists of Jack White (vocals, guitar), Brendan Benson (vocals, guitar), 
+						Jack Lawrence (bass guitar), and Patrick Keeler (drums). Lawrence and Keeler were originally members of the 
+						Greenhornes, while White and Lawrence went on to become members of the Dead Weather.
+					</p>
+					<span class="more-description-span">
+						The band is based in Nashville, Tennessee. According to the band's
+						official website, "The seed was sown in an attic in the middle of a hot summer when friends Jack White 
+						and Brendan Benson got together and wrote a song that truly inspired them.
+					</span>
+					<button class="description-button" onclick="moreDescription(this)" id="moreDescriptionButton">More</button>	
+					<div class="artist-social d-flex flex-row">
+						<div class="artist-social-link" onclick="goToSocial(this)" id="TheDeadWeatherInstagramLink"><i class="fa-brands fa-instagram"></i></div>
+						<div class="artist-social-link" onclick="goToSocial(this)" id="TheDeadWeatherFacebookLink"><i class="fa-brands fa-facebook"></i></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- ============================== -->
+<!-- FOOTER SECTION -->
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-info d-flex flex-column">
+				<div class="row">
+					<a class="col-3 social-link" id="github" href="https://github.com/vladyslavfiii" alt="Github" target="_blank" ><i class="fa-brands fa-github"></i></a>
+					<a class="col-3 social-link" id="telegram" href="https://t.me/vladyslavfiii" alt="Telegram" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+					<a class="col-3 social-link" id="instagram" href="https://www.instagram.com/vladyslavfiii/" alt="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+					<a class="col-3 social-link" id="twitter" href="https://twitter.com/vladyslav_fiii" alt="Twitter" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>	
+				</div>
+				<div class="row">
+					<p readonly class="col-4 footer-text">vladyslavfiii</p>
+					<p readonly class="col-8 footer-text email-to-copy" onclick="copyEmail(this)">vladyslav.filimonchuk@gmail.com</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="src/scripts/script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  
+	</body>
+
+</html>

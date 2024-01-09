@@ -1,0 +1,373 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+body{
+	width: 100%;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    color:#000;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+.container{
+	width: 1200px;
+}
+.navbar-nav{
+	width: 100%;
+	gap: 10px;
+}
+.nav-link{
+	color: #000;
+	transition: .3s;
+}
+.nav-link::after{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 1px;
+	background-color: #000;
+	transform: scale(0);
+	position: relative;
+}
+.nav-link:hover{
+	margin-inline: 25px;
+
+	transform: scale(1.25);
+	transition: .3s;
+}
+.nav-link:hover::after{
+	transform: scale(1);
+}
+.header {
+	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	padding-block: 50px
+	;
+	background-color: #232b2b;
+}
+.carousel-item-direction{
+	flex-direction: row;
+}
+.background-gif{
+	width: 1000px;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	padding-block: 50px;
+
+	gap: 25px;
+}
+.slide-1{
+	background-image: url('./cover/fearOfTheDawn.gif');
+}
+.slide-2{
+	background-image: url('./cover/theWhiteStripesGreatestHits.gif');
+}
+.slide-3{
+	background-image: url('./cover/enteringHeavenAliveJackWhite.gif');
+}
+
+.album-cover{
+	height: 100%;
+	justify-self: start;
+	flex-grow: .25;
+}
+.cover{
+	width: 350px;
+	height: 350px;
+
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	border: 5px solid #fff;
+	border-radius: 24px;
+	object-fit: fill;
+	transform: scale(1);
+	transition: .3s;
+}
+.cover:hover{
+	transform: scale(1.05);
+	transition: .3s;
+}
+#fearOfTheDawnJackWhiteAlbumCover{
+	background-image: url('cover/fearOfTheDawn.png');
+}
+#theWhiteStripesGreatestHitsAlbumCover{
+	background-image: url('cover/theWhiteStripesGreatestHits.png');
+}
+#enteringHeavenAliveJackWhiteAlbumCover{
+	background-image: url('cover/enteringHeavenAliveJackWhite.png');
+}
+.desctiption{
+	align-self: center;
+}
+.desctiption p{
+	color:#fff;
+	text-transform: uppercase;
+}
+.desctiption-jack-white p{
+	text-shadow: 2px 2px rgb(21,111,149);
+}
+.desctiption-white-stripes p{
+	text-shadow: 2px 2px #cf1d23ff;
+}
+.desctiption p span{
+	color: #fff;
+
+ 	text-transform: lowercase;
+	text-transform: capitalize;
+}
+.header-links{
+	gap: 10px;
+}
+.playSongControl {
+	width: 25px;
+	height: 25px;
+
+	background-size: 25px 25px;
+
+	border: 0;
+}
+#playSongButton{
+	background-image: url('./icons/play.svg');
+}
+#pauseSongButton{
+	background-image: url('./icons/pause.svg');
+}
+.content {
+	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+.artist-info{
+	width: 100%;
+	height: 100%;
+
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.artist-description{
+	width: 50%;
+	height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+
+	background-color:rgba(0, 0, 0, 0.5);
+
+	text-align: justify;
+	color: #fff;
+	
+	padding: 50px;
+}
+.artist-description.active{
+	animation: artistDescriptionAnimation 2s;
+}
+.artist-description.active h1{
+	animation: artistTextDescriptionAnimation 2s;
+}
+.artist-description.active p{
+	animation: artistTextDescriptionAnimation 2s;
+}
+.artist-description.active button{
+	animation: artistTextDescriptionAnimation 2s;
+}
+.artist-description.active div{
+	animation: artistTextDescriptionAnimation 2s;
+}
+#artistJackWhite{
+	text-shadow: 2px 2px rgb(21,111,149);
+}
+#artistTheWhiteStripes{
+	text-shadow: 2px 2px #cf1d23ff;
+}
+#artistTheRaconteurs{
+	text-shadow: 2px 2px #1c9430ff;
+}
+#artistTheDeadWeather{
+	text-shadow: 2px 2px #ebc540ff;
+}
+#artistJackWhite{
+	background-image: url('cover/alternativeBackgroundJackWhite.png');
+}
+#artistTheWhiteStripes{
+	background-image: url('cover/backgroundTheWhiteStripes.png');
+}
+#artistTheRaconteurs{
+	background-image: url('cover/backgroundTheRaconteurs.png');
+}
+#artistTheDeadWeather{
+	background-image: url('cover/backgroundTheDeadWeather.png');
+}
+.description-button{
+	background: none;
+	border: 1px solid white;
+
+	color: white;
+	font-size: 20px;
+
+	margin-top: 50px;
+	padding: 10px 50px;
+	transition: 1s;
+}
+.description-button:hover{
+	background: grey;
+}
+.more-description-span{
+	display: none;
+}
+.artist-social{
+	padding-block: 50px;
+	gap: 25px;
+}
+.artist-social-link i{
+	font-size: 50px;
+	transition: .3s;
+}
+.artist-social-link i:hover{
+	transform: scale(1.25);
+	transition: .3s;
+}
+@keyframes artistDescriptionAnimation {
+	0% {
+		height: 0;
+	}
+	100% {
+		height: 100vh;
+	}
+}
+@keyframes artistTextDescriptionAnimation {
+	0%{
+		display: none;
+		opacity: 0;
+	}
+	50%{
+		display: none;
+		opacity: 0;
+	}
+	100%{
+
+	}
+}
+.footer{
+	width: 100%;
+
+	background: #232b2b;
+
+	border-top: 1px solid white;
+	position: relative;
+  	bottom: 0;
+}
+.footer .container{
+	width: 500px
+}
+.footer-info{
+	padding-block: 50px;
+	gap: 50px;
+}
+.social-link{
+	display: flex;
+	
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+
+	transform: scale(1);
+	transition: .3s;
+}
+.social-link:hover{
+	transform: scale(1.5);
+	transition: .3s;
+}
+.social-link:link{
+	color: #fff;
+}
+.social-link:visited{
+	color:#fff;
+}
+.social-link:active {
+	color: #fff;
+}
+.fa-brands{
+	font-size: 32px;
+}
+.footer-text{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	color:#fff;
+}
+
+@media (max-width: 1400px) { 
+}
+@media (max-width: 1200px) {
+	.header .container{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+	.carousel{
+		width: 75%;
+	}
+	.artist-description{
+		width: 75%;
+	}
+}
+@media (max-width: 992px) {
+	.background-gif{
+		flex-direction: column;
+	}
+}
+@media (max-width: 768px) {
+	.artist-description{
+		width: 100%;
+	}
+}
+@media (max-width: 576px) {
+	body{
+		font-size: 12px;
+	}
+	.container{
+		width: 94%;
+	}
+	.cover{
+		width: 200px;
+		height: 200px;
+	}
+	.artist-description{
+		padding: 10px;
+	}
+	.artist-social-link i{
+		font-size: 32px;
+	}
+	.footer .container{
+		width: 94%;
+	}
+}
